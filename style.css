@@ -22,30 +22,40 @@
 
 body
 {
-    background: url('images/fond_jaune.png');
-    font-family: 'Trebuchet MS', Arial, sans-serif
+    background: url(images/fond_jaune.png);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
 
-#bloc_page
-{
+#bloc_page{
     width: 900px;
     margin: auto;
 }
 
-section h1, footer h1, nav a
-{
+section h1, footer h1, nav a{
     font-family: Dayrom, serif;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-header
-{
-    background: url('images/separateur.png') repeat-x bottom;
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
+header{
+    background: url(images/separateur.png) repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h1{
+    font-family: 'ballparkWeiner',serif;
+    font-size: 2.5em;
+    margin: 0 0 0 10px;
+}
+
+header h2{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
 }
 
 #titre_principal
@@ -54,207 +64,181 @@ header
     flex-direction: column;
 }
 
-#logo
-{
+#logo{
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-#logo img
-{
+#logo img{
     width: 59px;
-    height: 60px;
+    height:60px;
 }
 
-header h1
-{
-    font-family: 'ballparkWeiner', serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    margin: 0 0 0 10px;
-}
-
-header h2
-{
-    font-family: Dayrom, serif;
-    font-size: 1.1em;
-    margin-top: 0px;
-    font-weight: normal;
-}
-
-nav ul
-{
-    list-style-type: none;
+nav ul{
     display: flex;
-    align-items: flex-end;
+    list-style-type: none;
 }
 
-nav li
-{
+nav li{
     margin-right: 15px;
 }
 
-nav a
-{
+nav a{
     font-size: 1.3em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover
-{
+nav a:hover{
     color: #760001;
     border-bottom: 3px solid #760001;
 }
 
-#banniere_page
-{
+nav a{
+    text-transform: uppercase;
+}
+
+#banniere_page{
+    background: url(images/sanfrancisco.jpg) repeat-x;
+    width: 100%;
+    position: relative;
     margin-top: 15px;
     height: 200px;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
 }
 
-#banniere_description
-{
+#banniere_description{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    border-radius: 0px 0 px 5 px 5 px;
     width: 99.5%;
     height: 33px;
     padding-top: 15px;
     padding-left: 4px;
-    background-color: rgba(24,24,24,0.8);
+    background-color: rgba(24, 24, 24, 0.8);
     color: white;
     font-size: 0.8em;
 }
 
-.bouton_rouge
-{
-   height: 25px;
-   position: absolute;
-   right: 5px;
-   bottom: 5px;
-   background: url('images/fond_degraderouge.png') repeat-x;
-   border: 1px solid #760001;
-   border-radius: 5px;
-   font-size: 1.2em;
-   text-align: center; 
-   padding: 3px 8 px 0px 8px;
-   color: white;
-   text-decoration: none;
+.bouton_rouge{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url(images/fond_degraderouge.png) repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
 }
 
-.bouton_rouge img
-{
-    border:0;
+.bouton_rouge img{
+    border: 0;
 }
 
-section
-{
+section{
     display: flex;
     margin-bottom: 20px;
 }
 
-article,aside
-{
-    margin-right: 20px;
-    flex:3;
+article,aside{
+    text-align: justify;
 }
 
-.icone_categorie
-{
+article{
+    margin-right: 20px;
+    flex: 3;
+}
+
+.icone_voyage{
     vertical-align: middle;
     margin-right: 8px;
 }
 
-article p
-{
+article p{
     font-size: 0.8em;
+    color:black
 }
 
-aside
-{
+aside{
     flex: 1.2;
     position: relative;
+    color: white;
     background-color: #706b64;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 10px;
-    color: white;
     font-size: 0.9em;
 }
 
-#fleche_bulle
-{
-    position:absolute;
+#fleche_bulle{
+    position: absolute;
     top: 100px;
     left: -12px;
 }
 
-#photo_zozor
-{
+#photo_zozor{
     text-align: center;
 }
 
-#photo_zozor img
-{
+#photo_zozor img{
     border: 1px solid #181818;
 }
 
-aside img
-{
+aside img{
     margin-right: 5px;
 }
 
-footer
-{
+footer{
     display: flex;
-    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png')
-    repeat-x top, url('images/ombre.png') repeat-x top;
+    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat_x top, url('images/ombre.png') repeat-x top;
     padding-top: 25px;
-    align-items: baseline;
 }
 
-footer p, footer ul
-{
+footer p, footer ul{
     font-size: 0.8em;
 }
 
-footer h1
-{
+footer h1{
     font-size: 1.1em;
 }
 
-#dernier_tweet
-{
-    width: 28%;
+#dernier_tweet{
+    width:28%
 }
 
-#photos
-{
-   width: 31%; 
+#photos{
+    width: 35%;
 }
 
-#photos img
-{
+#photos img{
     border: 1px solid #181818;
     margin-right: 2px;
 }
 
-#amis
-{
+#mes_amis{
     width: 31%;
 }
 
-#amis ul
-{
-    list-style-image: url('images/ico_liensexterne.png');
+#listes_amis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul{
+    list-style: url('images/ico_liensexterne.png');
     padding-left: 2px;
 }
 
-#amis a
-{
+#mes_amis a {
     text-decoration: none;
-    color: #760001;
+    color:#760001
 }
